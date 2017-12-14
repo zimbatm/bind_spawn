@@ -1,0 +1,11 @@
+[package]
+name = "bind_spawn"
+version = "0.1.0"
+authors = ["zimbatm <zimbatm@zimbatm.com>"]
+description = """
+Dynamically binds a port, spawns the process using the
+systemd-sddaemon protocol and prints what port it is.
+"""
+
+[dependencies]
+nix = "*"
