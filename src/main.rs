@@ -20,6 +20,7 @@ fn main() {
     println!("addr={} fd={}", addr, fd);
 
     // TODO: actually select which command is going to be running
+    // TODO: actually daemonize with double-fork-exec
     let status = Command::new("sh")
         .arg("-c")
         .arg("echo world")
